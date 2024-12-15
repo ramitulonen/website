@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.root-container {
+    display: flex;
+    flex-direction: column;
+    /*height: 100vh;*/
+    min-height: 100vh;
+}
+
+.root-header {
+    display: flex;
+    flex-direction: column;
+    padding: 0; /* Remove any extra padding */
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    flex: 1 1 150px;
+    min-width: 150px;
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-links-left {
+    display: flex;
+    gap: 15px;
+    margin: 0 auto;
+    color: #e9e9e9;
+}
+
+.nav-links-right {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+    color: #e9e9e9;
+    margin-right: 50px;
+    
+}
+
+.nav-links-left a,
+.nav-links-right a {
+    color: #e9e9e9;
+    text-decoration: none; /* removes underline */
+}
+
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    color: #e9e9e9;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-bar {
+    display: flex; /* Align input and button horizontally */
+    align-items: center;
+    gap: 5px; /* Add space between input and button */
+}
+
+.search-bar input[type="text"] {
+    max-width: 200px;
+    width: 100%;
+    padding: 5px; /* Optional: add padding for better alignment */
+}
+
+.search-bar button {
+    padding: 5px 15px;
+    border: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.root-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    
+}
+
+.content1, .content2, .content3, .content4 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 1000px;
+}
+
+.content1 a, .content2 a, .content3 a, .content4 a {
+    color: #e9e9e9;
+    text-decoration: none;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.content1 p, .content2 p, .content3 p, .content4 p {
+    color: #e9e9e9;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.content1 {
+    background-image: url("../images/muokattubiljardi.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content2 {
+    background-image: url("../images/armuokattu.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content1 .right, .content2 .right, .content3 .right, .content4 .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px; /* Adjust padding as needed */
+    color: white; /* Set text color to white if needed */
+}
+
+.article h2 {
+    margin: 0;
+    
+}
+
+.root-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    border-top: 2px solid black;
+    /*flex-basis: 22%;*/
+    color: #e9e9e9;
+    text-decoration: none;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links {
+    display: flex;
+    gap: 10px;
+    margin-right: 150px;
+}
+
+.footer-links a {
+    color: #e9e9e9;
+    text-decoration: none;
+    margin-left: 50px;
+}

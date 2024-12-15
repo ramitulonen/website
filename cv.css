@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.root-container {
+    display: flex;
+    flex-direction: column;
+    /*height: 100vh;*/
+    min-height: 100vh;
+    align-items: center;
+}
+
+.root-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0; /* Remove any extra padding */
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    flex: 1 1 150px;
+    min-width: auto;
+    max-width: 20vw;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-links-left {
+    display: flex;
+    gap: 15px;
+    margin: 0 auto;
+    color: #e9e9e9;
+    font-size: xx-large;
+}
+
+.nav-links-right {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+    color: #e9e9e9;
+    margin-right: 50px;
+    
+}
+
+.nav-links-left a,
+.nav-links-right a {
+    color: #e9e9e9;
+    text-decoration: none;
+}
+
+
+.centerline {
+    display: inline-block; width: 0%;
+    color: #e9e9e9;
+    border-left: 2px solid #e9e9e9; margin: 40px 0;
+}
+
+
+
+
+
+.root-content {
+    /*background-color: rgb(19, 18, 18);*/
+    background-image: url("images/backgropund.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 95vw;
+    display: flex;
+    gap: 5vw;
+    overflow-y: auto;
+    color: #e9e9e9;
+    border-radius: 1rem;
+    margin-top: 120px;
+}
+
+.contentright {
+    display: inline-block; width: 60%;
+    color: #e9e9e9;
+    
+}
+
+.contentleft {
+    display: inline-block; width: 20%;
+    text-decoration: none;
+    color: #e9e9e9;
+    margin-left: 2vw;
+}
+
+
+
+
+
+
+.root-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    border-top: 2px solid black;
+    /*flex-basis: 22%;*/
+    color: #e9e9e9;
+    text-decoration: none;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links {
+    display: flex;
+    gap: 10px;
+    margin-right: 150px;
+}
+
+.footer-links a {
+    color: #e9e9e9;
+    text-decoration: none;
+    margin-left: 50px;
+}
